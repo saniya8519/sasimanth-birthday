@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>For My GEM 💙</title>
+
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    font-family:Georgia, "Times New Roman", serif;
+    overflow:hidden;
+}
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+#home{
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+    overflow:hidden;
+
+    background:
+
+    radial-gradient(
+        circle at 15% 20%,
+        #d7e8ff 0%,
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at 85% 20%,
+        #ddd9ff 0%,
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at 50% 100%,
+        #d5eef3 0%,
+        transparent 40%
+    ),
+
+    linear-gradient(
+        135deg,
+        #eef6ff,
+        #f0efff,
+        #eaf8fa
+    );
+}
+
+
+/* =========================
+   GLOW
+========================= */
+
+.glow{
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+
+    background:#ffffff55;
+
+    filter:blur(5px);
+
+    animation:float 6s infinite ease-in-out;
+}
+
+
+.glow.one{
+
+    top:8%;
+    left:8%;
+
+}
+
+
+.glow.two{
+
+    bottom:8%;
+    right:8%;
+
+    animation-delay:2s;
+
+}
+
+
+@keyframes float{
+
+    50%{
+        transform:translateY(-25px);
+    }
+
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro{
+
+    position:relative;
+    z-index:5;
+
+}
+
+
+.intro h1{
+
+    color:#536b82;
+
+    font-size:30px;
+
+    margin-bottom:12px;
+
+    letter-spacing:.5px;
+
+}
+
+
+.intro p{
+
+    color:#788b9c;
+
+    margin-bottom:35px;
+
+    font-size:15px;
+
+}
+
+
+/* =========================
+   ENVELOPE
+========================= */
+
+.envelope{
+
+    width:190px;
+    height:125px;
+
+    background:#fafcff;
+
+    border-radius:12px;
+
+    position:relative;
+
+    margin:auto;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 20px 50px #526b7a38;
+
+    transition:.5s;
+
+}
+
+
+.envelope:hover{
+
+    transform:
+    translateY(-10px)
+    scale(1.05);
+
+}
+
+
+/* Envelope top */
+
+.envelope::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    border-left:95px solid transparent;
+    border-right:95px solid transparent;
+
+    border-top:70px solid #a9c8e4;
+
+    z-index:2;
+
+}
+
+
+/* Envelope bottom */
+
+.envelope::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+    left:0;
+
+    border-left:95px solid #d6e6f3;
+    border-right:95px solid #d6e6f3;
+
+    border-top:65px solid transparent;
+
+}
+
+
+/* =========================
+   HEART
+========================= */
+
+.heart{
+
+    position:absolute;
+
+    z-index:5;
+
+    left:50%;
+    top:53%;
+
+    transform:
+    translate(-50%,-50%);
+
+    font-size:40px;
+
+    filter:
+    drop-shadow(0 5px 8px #58738a40);
+
+}
+
+
+/* =========================
+   CLICK TEXT
+========================= */
+
+.click{
+
+    margin-top:28px;
+
+    color:#6e8497;
+
+    font-size:14px;
+
+    animation:pulse 2s infinite;
+
+}
+
+
+@keyframes pulse{
+
+    50%{
+        opacity:.45;
+    }
+
+}
+
+
+/* =========================
+   LETTER PAGE
+========================= */
+
+#letterPage{
+
+    display:none;
+
+    height:100vh;
+
+    overflow-y:auto;
+
+    padding:40px 18px;
+
+    position:relative;
+
+    background:
+
+    radial-gradient(
+        circle at 10% 10%,
+        #d9eaff 0%,
+        transparent 30%
+    ),
+
+    radial-gradient(
+        circle at 90% 15%,
+        #e2ddff 0%,
+        transparent 32%
+    ),
+
+    radial-gradient(
+        circle at 50% 100%,
+        #d4edf3 0%,
+        transparent 35%
+    ),
+
+    linear-gradient(
+        135deg,
+        #eff7ff,
+        #f1efff,
+        #eaf8fa
+    );
+
+}
+
+
+/* =========================
+   FLOATING SYMBOLS
+========================= */
+
+.floating{
+
+    position:fixed;
+
+    pointer-events:none;
+
+    animation:
+    rise 8s linear infinite;
+
+    opacity:.55;
+
+    z-index:1;
+
+    color:#789ab4;
+
+}
+
+
+.f1{
+
+    left:8%;
+    bottom:-30px;
+
+    animation-delay:1s;
+
+}
+
+
+.f2{
+
+    left:25%;
+    bottom:-40px;
+
+    animation-delay:4s;
+
+}
+
+
+.f3{
+
+    right:20%;
+    bottom:-30px;
+
+    animation-delay:2s;
+
+}
+
+
+.f4{
+
+    right:7%;
+    bottom:-40px;
+
+    animation-delay:6s;
+
+}
+
+
+@keyframes rise{
+
+    from{
+
+        transform:
+        translateY(0)
+        rotate(0deg);
+
+        opacity:0;
+
+    }
+
+    20%{
+        opacity:.6;
+    }
+
+    to{
+
+        transform:
+        translateY(-110vh)
+        rotate(25deg);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* =========================
+   PAPER
+========================= */
+
+.paper{
+
+    position:relative;
+
+    z-index:3;
+
+    max-width:720px;
+
+    margin:auto;
+
+    padding:45px 35px 40px;
+
+    border-radius:25px;
+
+    background:
+    rgba(255,255,255,.72);
+
+    backdrop-filter:
+    blur(18px);
+
+    -webkit-backdrop-filter:
+    blur(18px);
+
+    border:
+    1px solid #ffffffb8;
+
+    box-shadow:
+    0 25px 70px #52657a30;
+
+    animation:
+    letterOpen 1.2s
+    cubic-bezier(.2,.8,.2,1);
+
+}
+
+
+@keyframes letterOpen{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(70px)
+        scale(.92)
+        rotateX(8deg);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0)
+        scale(1)
+        rotateX(0);
+
+    }
+
+}
+
+
+/* =========================
+   TOP HEART
+========================= */
+
+.top-heart{
+
+    text-align:center;
+
+    font-size:35px;
+
+    margin-bottom:8px;
+
+    animation:
+    heartBeat 2s infinite;
+
+}
+
+
+@keyframes heartBeat{
+
+    50%{
+        transform:scale(1.12);
+    }
+
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.paper h2{
+
+    text-align:center;
+
+    color:#526b82;
+
+    font-size:28px;
+
+    margin-bottom:8px;
+
+    letter-spacing:.4px;
+
+}
+
+
+.subtitle{
+
+    text-align:center;
+
+    color:#879aaa;
+
+    font-size:13px;
+
+    margin-bottom:32px;
+
+    font-style:italic;
+
+}
+
+
+/* =========================
+   PARAGRAPHS
+========================= */
+
+.paper p{
+
+    color:#5a6067;
+
+    font-size:17px;
+
+    line-height:2;
+
+    margin-bottom:18px;
+
+}
+
+
+/* =========================
+   HIGHLIGHT
+========================= */
+
+.highlight{
+
+    margin:28px 0;
+
+    padding:18px 20px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #e1efffaa,
+        #e8e2ffaa
+    );
+
+    color:#59738a;
+
+    font-size:18px;
+
+    font-style:italic;
+
+    box-shadow:
+    inset 0 0 20px #ffffff70;
+
+}
+
+
+/* =========================
+   SIGNATURE
+========================= */
+
+.signature{
+
+    text-align:right;
+
+    margin-top:35px;
+
+    color:#637d93;
+
+    font-size:19px;
+
+    line-height:1.8;
+
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back{
+
+    display:block;
+
+    margin:30px auto 0;
+
+    padding:10px 22px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #a8c4df,
+        #b8b0dc
+    );
+
+    color:white;
+
+    font-size:13px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.back:hover{
+
+    transform:
+    translateY(-3px);
+
+    box-shadow:
+    0 8px 20px #7e92a855;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .intro h1{
+        font-size:25px;
+    }
+
+    .paper{
+
+        padding:
+        35px 23px;
+
+        border-radius:22px;
+
+    }
+
+    .paper h2{
+        font-size:24px;
+    }
+
+    .paper p{
+
+        font-size:16px;
+
+        line-height:1.9;
+
+    }
+
+    .highlight{
+        font-size:16px;
+    }
+
+}
+/* =========================
+   FINAL BIRTHDAY PAGE
+========================= */
+
+#birthdayPage{
+
+    display:none;
+
+    height:100vh;
+    width:100%;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+
+    radial-gradient(
+        circle at 10% 10%,
+        #d9eaff 0%,
+        transparent 30%
+    ),
+
+    radial-gradient(
+        circle at 90% 15%,
+        #e2ddff 0%,
+        transparent 32%
+    ),
+
+    radial-gradient(
+        circle at 50% 100%,
+        #d4edf3 0%,
+        transparent 35%
+    ),
+
+    linear-gradient(
+        135deg,
+        #eff7ff,
+        #f1efff,
+        #eaf8fa
+    );
+}
+
+
+#birthdayPage h1{
+
+    color:#526b82;
+
+    font-size:70px;
+
+    font-weight:normal;
+
+    letter-spacing:.5px;
+
+}
+
+
+@media(max-width:600px){
+
+    #birthdayPage h1{
+
+        font-size:45px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section id="home">
+
+
+    <div class="glow one"></div>
+
+    <div class="glow two"></div>
+
+
+    <div class="intro">
+
+
+        <h1>
+            A Little Birthday Letter For You 💙
+        </h1>
+
+
+        <p>
+            For the brother I unexpectedly found in college...
+        </p>
+
+
+        <div
+            class="envelope"
+            onclick="openLetter()">
+
+
+            <div class="heart">
+                💙
+            </div>
+
+
+        </div>
+
+
+        <div class="click">
+
+            Tap the letter to open it ✨
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================
+     LETTER
+========================= -->
+
+<section id="letterPage">
+
+
+    <div class="floating f1">♡</div>
+
+    <div class="floating f2">✦</div>
+
+    <div class="floating f3">♡</div>
+
+    <div class="floating f4">✧</div>
+
+
+
+    <div class="paper">
+
+
+        <div class="top-heart">
+            💌
+        </div>
+
+
+        <h2>
+            To My Skeleton — My GEM 💙
+        </h2>
+
+
+        <div class="subtitle">
+            A little something I wanted to write for you...
+        </div>
+
+
+
+        <!-- =========================
+             LETTER
+        ========================= -->
+
+
+        <p>
+            Skelettooonnn 😂
+        </p>
+
+
+        <p>
+            Happy Birthdayyy! 🎂
+        </p>
+
+
+        <p>
+            Honestly, I don't know how to start,when I think about how we became
+            this close, it actually feels a little funny.
+            In first year, we didn't even have much
+            bonding. We just knew each other.
+        </p>
+
+
+        <p>
+            And then somehow, especially in second year
+            second semester, we became really close.
+            I think I should thank Sharanya.
+            We met and became close because of her.
+             😂
+        </p>
+
+
+        <p>
+            But after that, you slowly became someone
+            really special to me.
+        </p>
+
+
+        <p>
+            You are not just one of my college friends
+            anymore. You became someone who understands
+            me, listens to me, talks to me properly and
+            genuinely cares about me.You were there whenever I needed someone to talk to.
+            Even the small things,like just checking on me..they may feel small for you..but very special for me.
+        </p>
+
+
+        <div class="highlight">
+
+            "Some people become important to us
+            without us even realizing when it happened." 💙
+
+        </div>
+
+
+        <p>
+            And one thing I will always remember is how
+            you stayed there for me, especially during
+            internship. When many people were busy with
+            their own things or were not around, you were
+            still there.You didn't left me without clarifying.
+        </p>
+
+
+        <p>
+            Maybe it sounds like a small thing, but for me
+            it isn't. Having someone who is constantly
+            there and whom you can actually count on
+            means a lot.
+        </p>
+
+
+        <p>
+            Somewhere along the way, you became my
+            <strong>non-blood brother.</strong> 🤍
+        </p>
+
+
+        <p>
+            And I don't think you know how special that
+            is for me.
+        </p>
+
+
+        <p>
+            I'm a single child, and I never had a brother.
+            So when I tied Rakhi to you, you were the first
+            person outside my family to whom I had ever
+            tied one.
+        </p>
+
+
+        <p>
+            That may look like a simple thing to someone
+            else, but it is actually very very special to me.
+        </p>
+
+
+        <div class="highlight">
+
+            You are the GEM — the brother I got
+            in this college. 💙
+
+        </div>
+
+
+        <p>
+            And obviously, I cannot write a letter to you
+            without mentioning our legendary
+            <strong>Motu and Patlu combination. 😂</strong>Yesss.
+            You are tall and I am short.
+            The way you call me "CATUU" I really like it.
+        </p>
+
+        <p>
+            Jokes apart, I'm really grateful that I met you.
+        </p>
+
+
+        <p>
+            College gave me many people, but only a few
+            actually become a part of my life in a
+            meaningful way.
+        </p>
+
+
+        <p>
+            You are one of those people for me.
+        </p>
+
+
+        <p>
+            We still have more college life left, so I hope
+            we make many more stupid memories, laugh over
+            the most random things, annoy each other,
+            tease each other and somehow survive these
+            remaining years together. 😂
+        </p>
+
+
+        <p>
+            And even after college, I hope this bond stays
+            the same, no matter where life takes us.
+        </p>
+
+
+        <div class="highlight">
+
+            Not brothers by blood,<br>
+            but definitely brother by bond. 💙
+
+        </div>
+
+
+        <p>
+            So on your birthday, I just want to say thank
+            you.
+        </p>
+
+
+        <p>
+            Thank you for being there.<br>
+            And thank you for becoming the brother
+            I never had.
+        </p>
+
+
+        <p>
+            I hope you achieve everything you want,
+            stay happy, stay healthy and keep being
+            the same person you are.
+        </p>
+
+
+        <p>
+            And yes, Skeleton...
+            please don't become any taller. 😂
+            Standing beside you is already enough
+            height difference for me.
+        </p>
+
+
+        <p>
+            Once again,
+            <strong>Happy Birthday, Sasimanth! 🎂💙</strong>
+        </p>
+        <!-- =========================
+             SIGNATURE
+        ========================= -->
+
+        <div class="signature">
+
+            With lots of love 💙<br>
+
+            Saniya(Catuu),<br>
+
+        </div>
+
+
+
+        <button
+            class="back"
+            onclick="goBack()">
+
+            ← Close Letter
+
+        </button>
+
+
+    </div>
+
+
+</section>
+<!-- =========================
+     FINAL BIRTHDAY PAGE
+========================= -->
+
+<section id="birthdayPage">
+
+    <h1>Happy Birthday Sasimanth!!!</h1>
+
+</section>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+
+function openLetter(){
+
+    document.getElementById("home")
+    .style.display="none";
+
+    document.getElementById("letterPage")
+    .style.display="block";
+
+}
+
+
+function goBack(){
+
+    document.getElementById("letterPage")
+    .style.display="none";
+
+    document.getElementById("birthdayPage")
+    .style.display="flex";
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
